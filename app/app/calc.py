@@ -2,6 +2,7 @@
 Calculator functions
 """
 
+
 def add(x, y):
     """
     Add two numbers together.
@@ -10,7 +11,8 @@ def add(x, y):
     :return: Sum of x and y
     """
     return x + y
-  
+
+
 def subtract(x, y):
     """
     Subtract second number from first number.
