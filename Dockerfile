@@ -13,7 +13,8 @@ ARG DEV=false
 RUN python -m venv /py && \
     /py/bin/pip install --upgrade pip && \
     apt-get update && \
-    apt-get install -y --no-install-recommends postgresql-client build-essential libpq-dev && \
+    apt-get install -y --no-install-recommends postgresql-client libjpeg-dev && \
+    apt-get install -y --no-install-recommends build-essential postgresql-server-dev-all musl-dev zlib1g-dev && \
     /py/bin/pip install -r /tmp/requirements.txt && \
     if [ $DEV = "true" ]; then \
       /py/bin/pip install -r /tmp/requirements.dev.txt; \
@@ -22,7 +23,11 @@ RUN python -m venv /py && \
     adduser \
       --disabled-password \
       --no-create-home \
-      django-user
+      django-user && \
+    mkdir -p /val/web/media && \
+    mkdir -p /val/web/static && \
+    chown -R django-user:django-user /val && \
+    chmod -R 755 /val \
 
 ENV PATH="/py/bin:$PATH"
 
