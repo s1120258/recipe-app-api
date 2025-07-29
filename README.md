@@ -1,12 +1,5 @@
 # 🍽️ Recipe API (Django REST + Docker + TDD)
 
-[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
-[![Django](https://img.shields.io/badge/Django-3.2-green.svg)](https://www.djangoproject.com/)
-[![DRF](https://img.shields.io/badge/DRF-3.12-red.svg)](https://www.django-rest-framework.org/)
-[![Docker](https://img.shields.io/badge/Docker-Enabled-blue.svg)](https://www.docker.com/)
-[![Postgres](https://img.shields.io/badge/Postgres-Database-blue.svg)](https://www.postgresql.org/)
-[![CI/CD](https://github.com/USERNAME/REPO/workflows/CI/badge.svg)](https://github.com/USERNAME/REPO/actions)
-
 An advanced **REST API** built with **Python, Django REST Framework, Docker, and Postgres**, following **Test Driven Development (TDD)** principles.  
 Includes authentication, recipe management, filtering, image uploads, and CI/CD integration.
 
@@ -34,5 +27,5 @@ Includes authentication, recipe management, filtering, image uploads, and CI/CD 
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/USERNAME/recipe-api.git
+git clone https://github.com/s1120258/recipe-app-api.git
 cd recipe-api
